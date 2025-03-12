@@ -2,79 +2,86 @@
     box-sizing: border-box;
 }
 
-.wrapper {
-    width: 1100px;
-    margin: 30px auto;
-    border: 1px solid black;
-}
-
-header {
-    border: 1px solid black;
-}
-
-.container {
-    display: flex;
-}
-
-main {
-    width: 660px;
-    padding: 20px;
-    border: 1px solid black;
-}
-
-.left {
-    width: 200px;
-    margin-right: 20px;
-    padding: 20px;
-    border: 1px solid black;
-}
-
-.right {
-    width: 200px;
-    margin-left: 20px;
-    padding: 20px;
-    border: 1px solid black;
-}
-
-footer {
-    padding: 30px auto;
-    border: 1px solid black;
-    text-align: center;
-}
-
-.block {
-    margin: 20px 0 50px 220px;
+body {
+    height: 100%;
 }
 
 .sitename {
-    margin-bottom: 10px;
-    font: 20px Arial;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: "Rowdies";
+    font-weight: 200;
 }
 
-nav {
+.sitename span {
+    color: rgb(255, 0, 187);
+    font-weight: bold;
+}
+
+.wrapper {
+    max-width: 960px;
+    min-width: 300px;
+    margin: 30px auto;
+    /* border: 1px solid black; */
+}
+
+.site-header {
+    border-top: 3px solid black;
+    border-bottom: 1px solid rgb(186, 180, 180);
+}
+
+.site-header__wrapper {
     display: flex;
-    width: 600px;
-    border: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 25px 10px;
 }
 
-nav a {
-    padding: 10px;
-    color: blue;
+a:hover {
+    color: rgb(255, 0, 187);
+    /* font-weight: bold; */
+
+}
+
+header a {
     text-decoration: none;
-    font: 15px Arial;
+    color: black;
+    font: 1.1em "Rowdies";
 }
 
-nav a:hover, nav a.activ {
-    color: red;
-   text-decoration: underline; 
+.nav-menu {
+    display: flex;
+    gap: 20px;
 }
 
-main h1 {
-    font: 20px "Times New Roman";
+.site-footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid #000;
+    border-bottom: 1px solid gray;
+    padding: 20px 0; 
+    gap: 25px;
 }
 
-main p {
-    margin: 10px 0;
-    text-align: justify;
-    font: 15px Arial;
+
+.nav-footer {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-footer, a {
+    text-decoration: none;
+    color: black;
+    font: 1.1em "Rowdies";
+    font-weight: bold;
+}
+
+.container {
+   
+}
+
+footer {
+
 }
